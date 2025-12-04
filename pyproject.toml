@@ -1,0 +1,23 @@
+[project]
+name = "newf"
+version = "0.1.0"
+description = "Minimal demo package with Ruff CI"
+readme = "README.md"
+requires-python = ">=3.10"
+
+[tool.ruff]
+# Files Ruff should care about
+src = ["src"]
+
+# Optional, just to show some config:
+line-length = 88
+
+[tool.ruff.lint]
+# Basic rule sets: E, F, W are like pycodestyle/pyflakes warnings/errors
+select = ["E", "F", "W"]
+
+[tool.ruff.format]
+# Use Ruff's default style (similar to Black)
+quote-style = "double"
+indent-style = "space"
+docstring-code-format = true
